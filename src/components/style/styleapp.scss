@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color:#4c43d4;;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    outline: none;
+    
+  }
+  button:hover {
+    cursor: pointer;
+   
+   }
+   .start{
+    background-color: yellow;
+
+   }
+  .app {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .start{
+    margin-top: 20px;
+    border: 2px solid black;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 2px solid rgb(4, 62, 100);
+  }
+  .board {
+    .board-row {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 2px solid #000;
+      &:last-child {
+        border-bottom: none;
+      }
+      .square {
+        width: 80px;
+        height: 80px;
+        border-right: 2px solid #000;
+        font-size: 2.5rem;
+        padding: 0;
+        overflow: hidden;
+        transition: all 0.2s;
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+  .text-green{
+    color:#12e177;
+  }
+  .text-orange{
+    color: #ffc72a;
+  }
